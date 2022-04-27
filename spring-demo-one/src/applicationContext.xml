@@ -9,7 +9,7 @@
 
     <!-- Define your beans here -->
     <bean id="myCoach"
-    	class="com.example.TrackCoach">
+    	class="com.example.TennisCoach">
     </bean>
 </beans>
 
