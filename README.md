@@ -1,1 +1,1 @@
-# Spring-Hibernate-Bootcamp
+# Spring and Hibernate
