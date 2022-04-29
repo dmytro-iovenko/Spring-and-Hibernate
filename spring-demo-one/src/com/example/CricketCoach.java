@@ -2,8 +2,11 @@ package com.example;
 
 public class CricketCoach implements Coach {
 	
-	// define a private field for the dependency
+	// define private fields for the dependency
 	private FortuneService fortuneService;
+	private String emailAddress;
+
+	private String team;
 	
 	// create a no-arg constructor
 	public CricketCoach() {
@@ -14,6 +17,24 @@ public class CricketCoach implements Coach {
 	public void setFortuneService(FortuneService theFortuneService) {
 		System.out.println("CricketCoach: inside setter method - setFortuneService");
 		fortuneService = theFortuneService;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String theEmailAddress) {
+		System.out.println("CricketCoach: inside setter method - setEmailAddress");
+		emailAddress = theEmailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String theTeam) {
+		System.out.println("CricketCoach: inside setter method - setTeam");
+		team = theTeam;
 	}
 
 	@Override
