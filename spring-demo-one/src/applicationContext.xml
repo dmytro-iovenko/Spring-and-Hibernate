@@ -14,7 +14,7 @@
 
     <!-- define the dependency -->
     <bean id="myFortuneService"
-    	class="com.example.HappyFortuneService">
+    	class="com.example.RandomFortuneService">
     </bean>
 
     <bean id="myCoach"
