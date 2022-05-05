@@ -2,7 +2,7 @@ package com.example;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class JavaConfigSpringApp {
+public class SwimJavaConfigSpringApp {
 
 	public static void main(String[] args) {
 		
@@ -11,7 +11,7 @@ public class JavaConfigSpringApp {
 				new AnnotationConfigApplicationContext(SportConfig.class); 
 		
 		// get the bean from spring container
-		Coach theCoach = context.getBean("swimCoach", Coach.class);
+		TennisCoach theCoach = context.getBean("tennisCoach", TennisCoach.class);
 		
 		// call a method on the bean
 		System.out.println(theCoach.getDailyWorkout());
@@ -19,6 +19,10 @@ public class JavaConfigSpringApp {
 		// call a method to get the daily fortune
 		System.out.println(theCoach.getDailyFortune());
 		
+		// call methods to get literal values
+		System.out.println(theCoach.getEmailAddress());
+		System.out.println(theCoach.getTeam());
+
 		// close the context
 		context.close();
 
