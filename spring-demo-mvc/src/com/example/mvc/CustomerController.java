@@ -26,8 +26,7 @@ public class CustomerController {
 		
 		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
 	}
-	
-	
+
 	@RequestMapping("/showForm")
 	public String showForm(Model theModel) {
 		
@@ -35,7 +34,7 @@ public class CustomerController {
 		
 		return "customer-form";
 	}
-	
+
 	@RequestMapping("/processForm")
 	public String processForm(
 			@Valid @ModelAttribute("customer") Customer theCustomer,
@@ -50,16 +49,5 @@ public class CustomerController {
 			return "customer-confirmation";
 		}
 	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
