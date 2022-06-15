@@ -13,4 +13,12 @@ public class AccountDAO {
 		
 	}
 
+	public boolean doWork() {
+		
+		System.out.println(getClass() + ": doWork()");
+		
+		return false;
+		
+	}
+
 }
