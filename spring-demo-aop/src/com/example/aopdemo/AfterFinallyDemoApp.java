@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.example.aopdemo.dao.AccountDAO;
 
-public class AfterThrowingDemoApp {
+public class AfterFinallyDemoApp {
 
 	public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class AfterThrowingDemoApp {
 		
 		try {
 			// add a boolean flag to simulate exceptions
-			boolean tripWire = true;
+			boolean tripWire = false;
 			theAccounts = theAccountDAO.findAccounts(tripWire);
 		}
 		catch (Exception exc) {
