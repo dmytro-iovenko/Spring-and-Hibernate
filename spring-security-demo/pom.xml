@@ -11,7 +11,6 @@
 
 	<properties>
 		<springframework.version>5.0.2.RELEASE</springframework.version>
-
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -51,9 +50,28 @@
 		    <version>2.3.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
-	<!-- TO DO: Add support for Maven WAR Plugin -->
-
+	<!-- Maven WAR Plugin support -->
+	<build>
+		<finalName>spring-security-demo</finalName>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<!-- Add Maven coordinates (GAV) for: maven-war-plugin -->
+				    <groupId>org.apache.maven.plugins</groupId>
+				    <artifactId>maven-war-plugin</artifactId>
+				    <version>3.2.0</version>					
+				</plugin>						
+			</plugins>
+		</pluginManagement>
+	</build>
 
 </project>
