@@ -39,4 +39,15 @@ public class StudentRestController {
 
 	}
 	
+	// define endpoint for "/students/{studentId}" - return student at index
+
+	@GetMapping("/students/{studentId}")
+	public Student getStudent(@PathVariable int studentId) {
+		
+		// just index into the list ... keep it simple for now
+		
+		return theStudents.get(studentId);
+		
+	}
+
 }
